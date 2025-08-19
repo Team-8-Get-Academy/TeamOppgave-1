@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamoppgave</title>
+    <style>
+        .items {
+
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .item > img {
+            height: 50px;
+        }
+
+        .item > div {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+        #Inventory > div > img {
+            height: 50px;
+        }
+
+        #Inventory > div > div {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+    </style>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <h1>Teamoppgave Uke 2</h1>
+    <div class="items">
+
+        <div class="item" onclick="pickupCat()" id="cat">
+            <img src="./assets/cat.jpg" />
+            <div>Katt</div>
+        </div>
+        <div class="item" onclick="pickupPatrol()" id="Patrol">
+            <img src="./assets/patrol.jpg" />
+            <div>Nissan Patrol</div>
+        </div>
+        <div class="item" onclick="pickupSkull()" id="Skull">
+            <img src="./assets/skull.webp" />
+            <div>Team 8</div>
+        </div>
+    </div>
+    <div id="Inventory" > 
+        <button onclick="showinventory()">Vis inventory</button>
+    </div>
+
+    
+</body>
+</html>
