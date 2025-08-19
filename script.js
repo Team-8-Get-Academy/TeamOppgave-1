@@ -13,6 +13,12 @@ function pickupSkull () {
     hasSkull = true
    document.getElementById("Skull").remove()
 }
+let hasRedBull = false
+function pickupRedBull () {
+    hasRedBull = true
+   document.getElementById("RedBull").remove()
+}
+
 function showinventory (){
     const inventoryelement = document.getElementById ("Inventory")
     let inventoryhtml = "<h2>Velkommen til Inventory</h2>"
@@ -37,6 +43,13 @@ function showinventory (){
             <div>Team 8 (skull)</div>
         </div>`
     }
+
+     if (hasRedBull) {
+        inventoryhtml += `<div>
+            <div>RedBull</div>
+        </div>`
+    }
+
 
     inventoryhtml += `<button onclick="closeinventory()">Lukk Inventory</button>`
 
